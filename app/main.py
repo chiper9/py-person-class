@@ -1,13 +1,13 @@
 class Person:
     people = {}
 
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int) -> None:
         self.name = name
         self.age = age
         Person.people[name] = self
 
 
-def create_person_list(people_data):
+def create_person_list(people_data: list) -> list:
     for person_data in people_data:
         name = person_data["name"]
         age = person_data["age"]
